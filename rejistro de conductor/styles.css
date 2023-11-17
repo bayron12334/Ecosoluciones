@@ -1,0 +1,102 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    background-image: url(slide3.jpg);
+    
+}
+
+h1{
+    color: #050505;
+}
+
+
+form {
+    background-color: #cfc7c76e(3, 255, 108, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 40px;
+    
+    
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color:black;
+    
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    background-color: #3cb13c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #488635;
+}
+
+/* Estilos para el formulario en dispositivos pequeños (responsivo) */
+@media (max-width: 480px) {
+    form {
+        padding: 15px;
+    }
+}
+
+.input1{
+    position: relative;
+    right: -26px;
+    top: 77px;
+}
+
+.input2{
+    position: relative;
+    top: -21px;
+    left: 26px;
+}
+
+#inputSi{
+    color: white;
+    position: relative;
+    bottom: 130px;
+    left: 148px;
+    width: 13px;
+}
+
+#inputNo{
+    color: white;
+    position: relative;
+    bottom: 165px;
+    right: -201px;
+    width: 18px;
+}
+
+.clase-del-conductor {
+    color: rgb(216, 210, 210); 
+    background-color: rgba(243, 235, 235, 0.74);
+    width: 40em; /* Aumenté el ancho del cuadro */
+    height: 73em; /* Aumenté la altura del cuadro */
+    position: relative;
+    left: 655px;
+    border-radius: 1em;
+}
+
+

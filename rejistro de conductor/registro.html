@@ -1,0 +1,50 @@
+<html><head>
+    <title>Datos del Conductor</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    
+    
+
+
+
+
+    <div class="clase-del-conductor">
+        <form action="registrar.php" method="post">
+            <h1>Datos del Conductor</h1>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" required=""><br><br>
+            
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido" id="apellido" required=""><br><br>
+            
+            <label for="licencia">Numero de Licencia:</label>
+            <input type="text" name="licencia" id="numero" required="" pattern="[0-9.]{1,25}" maxlength="10"><br><br>
+            
+            <label for="correo">Correo Electronico:</label>
+            <input type="email" name="correo" id="correo" required=""><br><br>
+            
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" name="contrasena" id="contrasena" required="" pattern="[A-z.]{0-10}" maxlength="10"><br><br>
+            
+            <label for="SOAT">Numero del SOAT:</label>
+            <input type="text" name="SOAT" id="numero" required="" pattern="[0-9.]{1,25}" maxlength="20"><br><br>
+            
+            <label for="eps">EPS:</label>
+<input class="input1" type="radio" name="eps" id="input1" required=""><label for="input1">Si­</label>
+<input class="input2" type="radio" name="eps" id="input2" required=""><label for="input2">No</label><br><br>
+
+            <label for="cedula">Documento de Identidad:</label>
+            <input type="text" name="cedula" id="numero" required="" pattern="[0-9.]{1,25}" maxlength="10"><br><br>
+            
+            <label for="cedula">Numero de telefono:</label>
+            <input type="text" name="cedula" id="numero" required="" pattern="[0-9.]{1,25}" maxlength="10"><br><br>
+           
+            <label for="cedula">Documento de Identidad:</label>
+            <input type="text" name="cedula" id="numero" required="" pattern="[0-9.]{1,25}" maxlength="10"><br><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+
+</body></html>
