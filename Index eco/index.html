@@ -1,0 +1,123 @@
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>    Resgistro de entrada y salida</title>
+     <link rel="stylesheet" href="vaidroll.css">
+</head>
+<body>
+
+<div class="caja1">
+        <div class="botondeintercambiar">
+            <div id="btnvai"></div>
+             <button type="button" class="botoncambiarcaja" onclick="loginvai()" id="vaibtnlogin">Login</button>
+             <button type="button" class="botoncambiarcaja" onclick="registrarvai()" id="vaibtnregistrar">Registrar</button>
+		</div>
+<form method="post" id="frmlogin" class="grupo-entradas">
+<div class="ub1">&#128273; Ingresar correo </div>
+<input type="email" name="txtusuario" placeholder="Ingresar correo electrónico" required>
+        <div class="error" id="email-error-login"></div>
+<div class="ub1">&#128274; Ingresar Contraseña</div>
+
+<input type="password" name="txtpassword" id="txtpassword" placeholder="Ingresar Contraseña" required>
+
+<div class="ub1">
+<input type="checkbox" onclick="verpassword()" >Mostrar contraseña
+ </div>
+<div class="ub1">Rol</div>
+<select name="rol">
+<option value="0" style="display:none;"><label>Seleccionar</label></option>
+<option value="Conductor">Conductor</option>
+<option value="Admin">Administrador</option>
+<option value="Admin">Supervisor</option>
+</select>
+
+<div aling="center">
+<a href="C:\Users\Aprendiz\Documents\login\" ><input type="submit" value="Ingresar"></a>
+
+<input type="reset" value="Cancelar">
+</div>
+</form>
+
+<form method="post"  id="frmregistrar" class="grupo-entradas">
+<div class="ub1">&#128273; Ingresar Correo</div>
+<input type="email" name="txtusuario" placeholder="Ingresar correo electrónico" required>
+<div class="ub1">&#128274; crear Contraseña</div>
+
+
+<input type="password" name="txtpassword2" id="txtpassword2" placeholder=" Ingresar contraseña" required>
+
+<div class="ub1">
+<input type="checkbox" onclick="verpassword2()" >Mostrar contraseña
+ </div>
+<div class="ub1">Rol</div>
+<select name="rol">
+<option value="0" style="display:none;"><label>Seleccionar</label></option>
+<option value="Conductor">Conductor</option>
+<option value="Admin">Administrador</option>
+<option value="Admin">Supervisor</option>
+</select>
+
+<div aling="center">
+<a href="C:\Users\Aprendiz\Documents\login\loginvista.html"><input type="submit" value="Registrar"></a>
+
+<input type="reset" value="Cancelar">
+</div>
+</form>
+</div>
+
+</body>
+<script>
+  function verpassword()
+  {
+      var tipo = document.getElementById("txtpassword");
+      if(tipo.type == "password")
+	  {
+          tipo.type = "text";
+      }
+	  else
+	  {
+          tipo.type = "Contraseña";
+      }
+  }
+    function verpassword2()
+  {
+      var tipo = document.getElementById("txtpassword2");
+      if(tipo.type == "password")
+	  {
+          tipo.type = "text";
+      }
+	  else
+	  {
+          tipo.type = "password";
+      }
+  }
+
+    var x = document.getElementById("frmlogin");
+    var y = document.getElementById("frmregistrar");
+    var z = document.getElementById("btnvai");
+
+
+        function registrarvai()
+		{
+			
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+
+	
+        }
+            function loginvai()
+		{
+			
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0";
+
+
+        }
+		
+
+</script>
+</html>
