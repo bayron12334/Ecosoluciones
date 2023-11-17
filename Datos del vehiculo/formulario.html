@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Datos del Vehiculo</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    
+    <!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <div class="clase-del-Vehiculo">
+        <form action="registrar.php" method="post">
+            <h1>Datos del Vehiculo</h1>
+            <label for="Marca"> Tipo del Vehiculo:</label>
+            <input type="text" name="Marca" id="Marca" required><br><br>
+            <label for="apellido">Placa del Vehiculo:</label>
+            <input type="text" name="Placa" id="numero" required pattern="[0-9.]{1,25}" maxlength="10" required><br><br>
+            
+            <label for="Color">Color del Vehiculo:</label>
+            <input type="text" name="color" id="color" required><br><br>
+
+            <label for="contrasena">Empresa transportadora:</label>
+            <input type="text" name="Empresa" id="Empresa" required pattern="[A-z.]{0-10}" maxlength="10" required><br><br>
+            
+            <label for="SOAT">Fecha de Revision:</label>
+            <input type="text" name="SOAT" id="numero" required pattern="[0-9.]{1,25}[/]" maxlength="20" required><br><br>
+            
+            <div class="container-details-product">
+            <div class="form-group">
+            <label for="Estado">Estado de las llantas:</label>
+            <select name="Estado" id="Estado" required>
+             <option disabled selected value="">
+                Escoge una opcion
+            </option>
+            <option value="Bien">Bien</option>
+            <option value="Regular">Regular</option>
+            <option value="Malo">Malo</option>
+            </select>
+        </div> 
+            <div class="form-group">
+                <br>
+            
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>
